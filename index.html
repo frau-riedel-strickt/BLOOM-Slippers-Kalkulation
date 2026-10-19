@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f5f1">
+<title>BLOOM Slippers Rechner | Frau Riedel strickt</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#202b32;background:#f6f5f1}*{box-sizing:border-box}body{margin:0;padding:30px 16px}main{max-width:760px;margin:auto}.language{display:flex;justify-content:flex-end;gap:8px;margin-bottom:8px}.language button,.print{background:white;border:1px solid #abb8bd;border-radius:7px;padding:7px 12px;cursor:pointer;font-weight:650;font-size:.95rem;color:#202b32}.language button[aria-pressed="true"]{background:#16495d;color:white;border-color:#16495d}header{text-align:center;margin:22px 0 30px}.eyebrow{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:#667a82}h1{font-size:clamp(2rem,6vw,3rem);margin:8px 0}p{line-height:1.55;color:#53626a}.card{background:#fff;border:1px solid #e2e6e6;border-radius:18px;padding:clamp(20px,5vw,34px);box-shadow:0 8px 28px #26363d0a}fieldset{border:0;padding:0;margin:0 0 8px}legend{font-weight:750;font-size:1.05rem;padding:0;margin-bottom:4px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:14px 0 24px}.fields.four{grid-template-columns:repeat(4,minmax(0,1fr))}label{display:block;font-size:.92rem;font-weight:650;margin-bottom:9px}input{width:100%;padding:13px 14px;border:1px solid #abb8bd;border-radius:9px;font-size:1.1rem}input:focus{outline:2px solid #396b83;outline-offset:2px}.hint{font-size:.85rem;color:#65747b;margin-top:8px}.result{border-top:1px solid #e4e9e9;margin-top:6px;padding-top:22px}h2{font-size:1.3rem}h3{font-size:1.05rem;margin:26px 0 10px}.numbers{display:flex;gap:12px;flex-wrap:wrap}.stat{flex:1;min-width:120px;background:#eff4f5;padding:14px;border-radius:10px}.stat strong{display:block;font-size:1.7rem}.stat span{font-size:.82rem;color:#53626a}.letters{width:100%;border-collapse:collapse;font-size:.95rem}.letters td{padding:10px 8px;border-bottom:1px solid #e9eded;vertical-align:top}.letters td.l{width:44px}.badge{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:7px;background:#cbe2e8;color:#16495d;font-weight:800}.letters td.v{text-align:right;white-space:nowrap;font-weight:750;font-size:1.15rem}.letters .how{display:block;font-size:.82rem;color:#65747b;margin-top:3px}.letters .sec{display:block;font-size:.78rem;color:#8a7f6e;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}.instructions{background:#f6f8f8;padding:14px 18px;border-radius:10px;line-height:1.65}.note{background:#f1eee8;color:#5c5446;padding:12px 16px;border-radius:10px;line-height:1.55;margin:12px 0}.error{color:#a62e37;font-weight:600}.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px}.actions a{color:#16495d;font-weight:650}.foot{text-align:center;font-size:.82rem;margin:25px 0;color:#66747b}@media(max-width:600px){.fields,.fields.four{grid-template-columns:1fr 1fr}}@media(max-width:380px){.fields,.fields.four{grid-template-columns:1fr}}@media print{body{background:white;padding:0}.language,.print,fieldset,.actions a{display:none}.card{box-shadow:none;border:0;padding:0}.result{border:0;margin:0;padding:0}}
+</style>
+</head>
+<body><main>
+<nav class="language" aria-label="Language / Sprache"><button type="button" id="de" aria-pressed="false">DE</button><button type="button" id="en" aria-pressed="false">EN</button></nav>
+<header><div class="eyebrow">Frau Riedel strickt</div><h1 data-i18n="title">BLOOM Slippers Rechner</h1><p data-i18n="intro">Gib deine Fußmaße und deine Maschenprobe ein – der Rechner ermittelt alle Werte A bis N für deine Anleitung.</p></header>
+<section class="card">
+<fieldset><legend data-i18n="footLegend">Fuß</legend><div class="fields">
+<div><label for="footLength" data-i18n="footLength">Fußlänge (cm)</label><input id="footLength" type="number" min="0" step="0.1" value="24.2" inputmode="decimal"><div class="hint" data-i18n="footLengthHint">Ferse bis längste Zehe</div></div>
+<div><label for="footWidth" data-i18n="footWidth">Fußbreite (cm)</label><input id="footWidth" type="number" min="0" step="0.1" value="9.4" inputmode="decimal"><div class="hint" data-i18n="footWidthHint">an der breitesten Stelle</div></div>
+</div></fieldset>
+<fieldset><legend data-i18n="beforeLegend">Maschenprobe vor dem Filzen</legend><div class="fields four">
+<div><label for="lenBefore" data-i18n="len">Länge (cm)</label><input id="lenBefore" type="number" min="0" step="0.1" value="15.5" inputmode="decimal"></div>
+<div><label for="widBefore" data-i18n="wid">Breite (cm)</label><input id="widBefore" type="number" min="0" step="0.1" value="15.6" inputmode="decimal"></div>
+<div><label for="sts10" data-i18n="sts10">Maschen auf 10 cm</label><input id="sts10" type="number" min="0" step="0.5" value="16" inputmode="decimal"></div>
+<div><label for="rows10" data-i18n="rows10">Reihen auf 10 cm</label><input id="rows10" type="number" min="0" step="0.5" value="22" inputmode="decimal"></div>
+</div></fieldset>
+<fieldset><legend data-i18n="afterLegend">Maschenprobe nach dem Filzen</legend><div class="fields">
+<div><label for="lenAfter" data-i18n="len">Länge (cm)</label><input id="lenAfter" type="number" min="0" step="0.1" value="9.5" inputmode="decimal"></div>
+<div><label for="widAfter" data-i18n="wid">Breite (cm)</label><input id="widAfter" type="number" min="0" step="0.1" value="10.6" inputmode="decimal"></div>
+</div></fieldset>
+<div id="output" aria-live="polite"></div>
+</section>
+<div class="foot" data-i18n="footer">© Frau Riedel strickt · BLOOM Slippers</div></main>
+<script>
+/* ---------- Werte aus BLOOM_Slippers_Werte_v3.xlsx ---------- */
+const REF={sts10:16,b:0.68125};            // Originalgarn: 16 M / 10 cm, Schrumpffaktor Breite
+const EASE=3;                              // Innenlänge = Fußlänge + 3 cm
+const HEEL_ROWS={2:6,3:8};                 // Fersenreihen je Wendungen
+const RATIO_MIN=0.85,RATIO_MAX=1.15;       // erlaubte Abweichung Maschenbreite (gefilzt) zum Originalgarn
+const LEN={ // Tabelle nach Fußlänge L1–L12
+ lo:[14,15.5,16.9,18.2,19.5,20.9,22.2,23.5,24.9,26.2,27.5,28.9],
+ hi:[15.4,16.8,18.1,19.4,20.8,22.1,23.4,24.8,26.1,27.4,28.8,30.1],
+ C:[4,4,4,4.5,5,5,5.5,6,6,7,8,9],
+ I:[2,2,2,2,2,3,3,3,3,3,3,3],
+ K:[21,24,25,26,28,29,32,33,34,34,36,36],
+ L:[20,23,24,26,27,29,31,33,34,34,35,35]};
+const WID={ // Tabelle nach Fußbreite W1–W12
+ mid:[5.7,6.3,6.8,7.3,7.9,8.4,8.9,9.4,9.9,10.5,11,11.5],
+ r8:[1,1,1,1,1,1,1,1,1,2,2,2], r4:[3,3,4,5,6,6,7,7,8,7,8,9],
+ E:[6,6,8,8,8,8,10,10,12,12,12,12],
+ F:[2,3,3,3,3,3,3,3,3,3,3,3]};
+const r1=x=>Math.round(x*10+1e-9)/10;
+WID.lo=WID.mid.map((m,k)=>k===0?r1(m-(WID.mid[1]-m)/2):r1((WID.mid[k-1]+m)/2));
+WID.hi=WID.mid.map((m,k)=>k===11?r1(r1(m+(m-WID.mid[10])/2)-0.1):r1(WID.lo[k+1]-0.1));
+
+const translations={
+ de:{title:'BLOOM Slippers Rechner',intro:'Gib deine Fußmaße und deine Maschenprobe ein – der Rechner ermittelt alle Werte A bis N für deine Anleitung.',footLegend:'Fuß',footLength:'Fußlänge (cm)',footLengthHint:'Ferse bis längste Zehe',footWidth:'Fußbreite (cm)',footWidthHint:'an der breitesten Stelle',beforeLegend:'Maschenprobe vor dem Filzen',afterLegend:'Maschenprobe nach dem Filzen',len:'Länge (cm)',wid:'Breite (cm)',sts10:'Maschen auf 10 cm',rows10:'Reihen auf 10 cm',footer:'© Frau Riedel strickt · BLOOM Slippers',
+  errInput:'Bitte alle Felder mit gültigen Zahlen ausfüllen.',
+  errShrink:'Die Maße nach dem Filzen müssen kleiner sein als vorher. Bitte prüfe deine Maschenprobe.',
+  errLength:'Die BLOOM Slippers sind für Fußlängen von 14,0 bis 30,1 cm ausgelegt.',
+  errRatio:'Deine Maschenprobe weicht zu stark vom Originalgarn ab (eine gefilzte Masche ist {pct} % so breit wie beim Originalgarn, möglich sind {min}–{max} %). Mit diesem Garn funktioniert die Anleitung leider nicht.',
+  errWidth:'Für diese Fußbreite in Kombination mit deiner Maschenprobe gibt es keine passende Spalte (angepasste Fußbreite {w} cm, möglich sind {lo}–{hi} cm).',
+  result:'Deine Werte',factorA:'Schrumpffaktor Länge (a)',factorB:'Schrumpffaktor Breite (b)',colL:'Spalte nach Fußlänge',colW:'Spalte nach Fußbreite',
+  gaugeAfter:'Deine Maschenprobe nach dem Filzen: {s} M × {r} R = 10 × 10 cm.',
+  adjusted:'Deine gefilzten Maschen sind {pct} % so breit wie beim Originalgarn. Deshalb rechnet der Rechner mit einer angepassten Fußbreite von {w} cm (Spalte {col}).',
+  lettersHead:'Alle Buchstaben für deine Anleitung',
+  dA:'Fußlänge',dB:'Maschen pro Nadel nach den Zunahmen',dC:'Länge Spitze nach dem Filzen',dD:'Strickmaß Spitze',dE:'Maschen abketten',dF:'Zunahmereihen insgesamt',dG:'Maschen nach den Zunahmen',dH:'Strickmaß Gesamtlänge',dI:'Wendungen Ferse',dJ:'Strickmaß bis zur Ferse',dK:'Maschen Seitenkante 1',dL:'Maschen Seitenkante 2',dM:'Maschen vordere Kante',dN:'Maschen Picotkante',
+  sA:'Werte vorab bestimmen',sB:'Spitze',sC:'Werte vorab bestimmen',sD:'Spitze',sE:'Ausschnitt abketten',sF:'Zunahmen',sG:'Zunahmen · Verkürzte Reihen',sH:'Werte vorab bestimmen',sI:'Verkürzte Reihen',sJ:'Mittelteil',sK:'Maschenaufnahme Kante',sL:'Maschenaufnahme Kante',sM:'Maschenaufnahme Kante',sN:'Picotkante',
+  hA:'deine Eingabe',hB:'Tabelle nach Fußbreite, Spalte {w}',hC:'Tabelle nach Fußlänge, Spalte {l}',hD:'C ÷ a = {c} ÷ {a}',hE:'Tabelle nach Fußbreite, Spalte {w}',hF:'Tabelle nach Fußbreite, Spalte {w}',hG:'Tabelle nach Fußbreite, Spalte {w}',hH:'(A + 3 cm) ÷ a = ({A} + 3) ÷ {a}',hI:'Tabelle nach Fußlänge, Spalte {l}',hJ:'H − Fersenabzug = {H} − {z} ({rows} Reihen ÷ {r10} × 10)',hK:'Tabelle nach Fußlänge, Spalte {l}',hL:'Tabelle nach Fußlänge, Spalte {l}',hLplus:'Tabelle nach Fußlänge, Spalte {l} (+{n}, damit N durch 3 teilbar ist)',hKplus:'Tabelle nach Fußlänge, Spalte {l} (+1, damit N durch 3 teilbar ist)',hM:'Tabelle nach Fußbreite, Spalte {w}',hN:'K + L + M = {K} + {L} + {M} (durch 3 teilbar)',
+  unitSts:'Maschen',unitRows:'',unitCm:'cm',wend:'Wendungen',
+  overview:'Auf einen Blick',
+  ov1:'Spitze: Folge in der Anleitung dem Teil für die Größen {part}.',ovW1:'W1 bis W9',ovW2:'W10 bis W12',
+  ov2:'Ferse: Stricke die Ferse mit {i} Wendungen. Je Fersenhälfte liegen {half} Maschen auf der Nadel.',
+  ov3:'Maschenaufnahme: Nimm an der einen Seite {k} Maschen, an der anderen {l} Maschen und vorne {m} Maschen auf.',
+  warnToe:'Achtung: Bei deiner Reihenprobe ist der Zunahmeteil der Spitze nach dem Filzen etwa {t} cm lang und damit länger als C ({c} cm). Die Spitze wird dadurch etwas länger.',
+  noteRef:'Die Tabellenwerte gelten für das Originalgarn. Bei einem anderen Garn passt der Rechner die Maschenzahlen über die Spalte nach Fußbreite an. Die Längen rechnest du ohnehin mit deinem eigenen Schrumpffaktor.',
+  print:'Ergebnis drucken',pickup:'Weiter zum Maschenaufnahmerechner'},
+ en:{title:'BLOOM Slippers Calculator',intro:'Enter your foot measurements and your gauge swatch – the calculator works out all values A to N for your pattern.',footLegend:'Foot',footLength:'Foot length (cm)',footLengthHint:'heel to longest toe',footWidth:'Foot width (cm)',footWidthHint:'at the widest point',beforeLegend:'Swatch before felting',afterLegend:'Swatch after felting',len:'Length (cm)',wid:'Width (cm)',sts10:'Stitches per 10 cm',rows10:'Rows per 10 cm',footer:'© Frau Riedel strickt · BLOOM Slippers',
+  errInput:'Please fill in all fields with valid numbers.',
+  errShrink:'The measurements after felting must be smaller than before. Please check your swatch.',
+  errLength:'The BLOOM Slippers are designed for foot lengths from 14.0 to 30.1 cm.',
+  errRatio:'Your gauge differs too much from the original yarn (a felted stitch is {pct} % as wide as with the original yarn; {min}–{max} % is possible). Unfortunately the pattern does not work with this yarn.',
+  errWidth:'There is no matching column for this foot width combined with your gauge (adjusted foot width {w} cm; {lo}–{hi} cm is possible).',
+  result:'Your values',factorA:'Shrink factor length (a)',factorB:'Shrink factor width (b)',colL:'Column by foot length',colW:'Column by foot width',
+  gaugeAfter:'Your gauge after felting: {s} sts × {r} rows = 10 × 10 cm.',
+  adjusted:'Your felted stitches are {pct} % as wide as with the original yarn, so the calculator uses an adjusted foot width of {w} cm (column {col}).',
+  lettersHead:'All letters for your pattern',
+  dA:'Foot length',dB:'Stitches per needle after the increases',dC:'Toe length after felting',dD:'Knitted toe length',dE:'Stitches to bind off',dF:'Increase rows in total',dG:'Stitches after the increases',dH:'Knitted total length',dI:'Heel turns',dJ:'Knitted length to the heel',dK:'Stitches side edge 1',dL:'Stitches side edge 2',dM:'Stitches front edge',dN:'Stitches picot edge',
+  sA:'Determine values in advance',sB:'Toe',sC:'Determine values in advance',sD:'Toe',sE:'Binding off the opening',sF:'Increases',sG:'Increases · Short rows',sH:'Determine values in advance',sI:'Short rows',sJ:'Middle section',sK:'Picking up stitches',sL:'Picking up stitches',sM:'Picking up stitches',sN:'Picot edge',
+  hA:'your input',hB:'table by foot width, column {w}',hC:'table by foot length, column {l}',hD:'C ÷ a = {c} ÷ {a}',hE:'table by foot width, column {w}',hF:'table by foot width, column {w}',hG:'table by foot width, column {w}',hH:'(A + 3 cm) ÷ a = ({A} + 3) ÷ {a}',hI:'table by foot length, column {l}',hJ:'H − heel allowance = {H} − {z} ({rows} rows ÷ {r10} × 10)',hK:'table by foot length, column {l}',hL:'table by foot length, column {l}',hLplus:'table by foot length, column {l} (+{n} so that N is divisible by 3)',hKplus:'table by foot length, column {l} (+1 so that N is divisible by 3)',hM:'table by foot width, column {w}',hN:'K + L + M = {K} + {L} + {M} (divisible by 3)',
+  unitSts:'sts',unitRows:'',unitCm:'cm',wend:'turns',
+  overview:'At a glance',
+  ov1:'Toe: follow the part for sizes {part} in the pattern.',ovW1:'W1 to W9',ovW2:'W10 to W12',
+  ov2:'Heel: work the heel with {i} turns. Each heel half has {half} stitches.',
+  ov3:'Picking up: pick up {k} stitches along one side, {l} stitches along the other and {m} stitches at the front.',
+  warnToe:'Note: with your row gauge the increase section of the toe is about {t} cm long after felting, which is longer than C ({c} cm). The toe will be slightly longer.',
+  noteRef:'The table values apply to the original yarn. With a different yarn the calculator adjusts the stitch counts via the column by foot width. Lengths are calculated with your own shrink factor anyway.',
+  print:'Print result',pickup:'Go to the stitch pick-up calculator'}
+};
+const params=new URLSearchParams(location.search);
+const requested=params.get('lang');
+let lang=(requested==='de'||requested==='en')?requested:(navigator.language.toLowerCase().startsWith('de')?'de':'en');
+const ids=['footLength','footWidth','lenBefore','widBefore','sts10','rows10','lenAfter','widAfter'];
+const inputs=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
+const output=document.getElementById('output');
+const fmt=(x,d=1)=>{const s=(Math.round(x*10**d)/10**d).toFixed(d);return lang==='de'?s.replace('.',','):s;};
+const fill=(s,o)=>s.replace(/\{(\w+)\}/g,(_,k)=>o[k]);
+function setLanguage(next){lang=next;document.documentElement.lang=lang;document.title=translations[lang].title+' | Frau Riedel strickt';document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=translations[lang][el.dataset.i18n]);for(const code of ['de','en'])document.getElementById(code).setAttribute('aria-pressed',String(code===lang));const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url);render();}
+function calc(v){
+ const a=v.lenAfter/v.lenBefore,b=v.widAfter/v.widBefore;
+ const l=LEN.lo.findIndex((lo,k)=>v.footLength>=lo-1e-9&&v.footLength<=LEN.hi[k]+1e-9);
+ // Breite einer gefilzten Masche im Verhältnis zum Originalgarn
+ const ratio=(b/v.sts10)/(REF.b/REF.sts10);
+ const wAdj=v.footWidth/ratio;
+ let w=-1; for(let k=0;k<12;k++){if(wAdj>=WID.lo[k]-1e-9&&(k===11?wAdj<=WID.hi[11]+0.0999:wAdj<WID.lo[k+1]-1e-9)){w=k;break;}}
+ return {a,b,l,w,ratio,wAdj};
+}
+function render(){
+ const t=translations[lang];
+ const raw=ids.map(id=>inputs[id].value.trim());
+ const v=Object.fromEntries(ids.map((id,i)=>[id,Number(raw[i])]));
+ if(raw.some(x=>x==='')||Object.values(v).some(x=>!Number.isFinite(x)||x<=0)){output.innerHTML=`<p class="error">${t.errInput}</p>`;return;}
+ if(v.lenAfter>=v.lenBefore||v.widAfter>=v.widBefore){output.innerHTML=`<p class="error">${t.errShrink}</p>`;return;}
+ const c=calc(v);
+ if(c.l<0){output.innerHTML=`<p class="error">${t.errLength}</p>`;return;}
+ if(c.ratio<RATIO_MIN||c.ratio>RATIO_MAX){output.innerHTML=`<p class="error">${fill(t.errRatio,{pct:Math.round(c.ratio*100),min:Math.round(RATIO_MIN*100),max:Math.round(RATIO_MAX*100)})}</p>`;return;}
+ if(c.w<0){output.innerHTML=`<p class="error">${fill(t.errWidth,{w:fmt(c.wAdj),lo:fmt(WID.lo[0]),hi:fmt(WID.hi[11])})}</p>`;return;}
+ const {a,b,l,w}=c, L=`L${l+1}`, Wc=`W${w+1}`;
+ const A=v.footLength, C=LEN.C[l];
+ const D=C/a, H=(A+EASE)/a, I=LEN.I[l], heelRows=HEEL_ROWS[I], z=heelRows/v.rows10*10, J=r1(H)-r1(z);
+ const totalToe=8+8*WID.r8[w]+4*WID.r4[w], B=totalToe/4, E=WID.E[w], F=WID.F[w], G=totalToe-E+2*F, M=E/2+1;
+ let K=LEN.K[l], Lv=LEN.L[l], addL=0, addK=0;
+ while((K+Lv+M)%3!==0){ if(addL<=addK){Lv++;addL++;} else {K++;addK++;} }
+ const N=K+Lv+M;
+ const toeRounds=2+2*WID.r4[w]+2*(WID.r8[w]-1), toeFelt=toeRounds/v.rows10*10*a;
+ const rows=[
+  ['A',fmt(A),t.unitCm,t.hA],
+  ['B',B,t.unitSts,fill(t.hB,{w:Wc})],
+  ['C',fmt(C),t.unitCm,fill(t.hC,{l:L})],
+  ['D',fmt(D),t.unitCm,fill(t.hD,{c:fmt(C),a:fmt(a,3)})],
+  ['E',E,t.unitSts,fill(t.hE,{w:Wc})],
+  ['F',F,'',fill(t.hF,{w:Wc})],
+  ['G',G,t.unitSts,fill(t.hG,{w:Wc})],
+  ['H',fmt(H),t.unitCm,fill(t.hH,{A:fmt(A),a:fmt(a,3)})],
+  ['I',I,'',fill(t.hI,{l:L})],
+  ['J',fmt(J),t.unitCm,fill(t.hJ,{H:fmt(H),z:fmt(z),rows:heelRows,r10:fmt(v.rows10)})],
+  ['K',K,t.unitSts,addK?fill(t.hKplus,{l:L}):fill(t.hK,{l:L})],
+  ['L',Lv,t.unitSts,addL?fill(t.hLplus,{l:L,n:addL}):fill(t.hL,{l:L})],
+  ['M',M,t.unitSts,fill(t.hM,{w:Wc})],
+  ['N',N,t.unitSts,fill(t.hN,{K,L:Lv,M})]];
+ const table=rows.map(([k,val,unit,how])=>`<tr><td class="l"><span class="badge">${k}</span></td><td>${t['d'+k]}<span class="how">${how}</span><span class="sec">${t['s'+k]}</span></td><td class="v">${val}${unit?' '+unit:''}</td></tr>`).join('');
+ const adjusted=Math.abs(c.ratio-1)>0.005?`<div class="note">${fill(t.adjusted,{pct:Math.round(c.ratio*100),w:fmt(c.wAdj),col:Wc})}</div>`:'';
+ const warn=toeFelt>C?`<div class="note">${fill(t.warnToe,{t:fmt(toeFelt),c:fmt(C)})}</div>`:'';
+ output.innerHTML=`<div class="result"><h2>${t.result}</h2>
+ <div class="numbers"><div class="stat"><strong>${fmt(a,3)}</strong><span>${t.factorA}</span></div><div class="stat"><strong>${fmt(b,3)}</strong><span>${t.factorB}</span></div><div class="stat"><strong>${L}</strong><span>${t.colL}</span></div><div class="stat"><strong>${Wc}</strong><span>${t.colW}</span></div></div>
+ <p>${fill(t.gaugeAfter,{s:fmt(v.sts10/b),r:fmt(v.rows10/a)})}</p>${adjusted}${warn}
+ <h3>${t.overview}</h3><div class="instructions">${fill(t.ov1,{part:w<9?t.ovW1:t.ovW2})}<br>${fill(t.ov2,{i:I,half:G/2})}<br>${fill(t.ov3,{k:K,l:Lv,m:M})}</div>
+ <h3>${t.lettersHead}</h3><table class="letters">${table}</table>
+ <p class="hint">${t.noteRef}</p>
+ <div class="actions"><button type="button" class="print" onclick="window.print()">${t.print}</button><a href="https://frau-riedel-strickt.github.io/maschenrechner/?lang=${lang}">${t.pickup} →</a></div></div>`;
+}
+for(const code of ['de','en'])document.getElementById(code).addEventListener('click',()=>setLanguage(code));
+for(const el of Object.values(inputs))el.addEventListener('input',render);
+setLanguage(lang);
+</script></body></html>
