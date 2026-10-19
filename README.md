@@ -1,0 +1,1 @@
+# BLOOM-Slipper-Werte
