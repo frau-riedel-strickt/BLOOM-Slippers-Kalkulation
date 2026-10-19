@@ -156,7 +156,7 @@ function render(){
  <h3>${t.overview}</h3><div class="instructions">${fill(t.ov1,{part:w<9?t.ovW1:t.ovW2})}<br>${fill(t.ov2,{i:I,half:G/2})}<br>${fill(t.ov3,{k:K,l:Lv,m:M})}</div>
  <h3>${t.lettersHead}</h3><table class="letters">${table}</table>
  <p class="hint">${t.noteRef}</p>
- <div class="actions"><button type="button" class="print" onclick="window.print()">${t.print}</button><a href="https://frau-riedel-strickt.github.io/maschenrechner/?lang=${lang}">${t.pickup} →</a></div></div>`;
+ <div class="actions"><button type="button" class="print" onclick="window.print()">${t.print}</button><a href="https://frau-riedel-strickt.github.io/maschenaufnahmerechner/?lang=${lang}">${t.pickup} →</a></div></div>`;
 }
 for(const code of ['de','en'])document.getElementById(code).addEventListener('click',()=>setLanguage(code));
 for(const el of Object.values(inputs))el.addEventListener('input',render);
